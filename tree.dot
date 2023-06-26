@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="x[9] <= 0.5\nsamples = 6300\nvalue = [5582, 718]\nclass = malignant", fillcolor="#e89152"] ;
+1 [label="x[7] <= 0.5\nsamples = 6103\nvalue = [5514, 589]\nclass = malignant", fillcolor="#e88e4e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="x[5] <= 0.5\nsamples = 4284\nvalue = [3766, 518]\nclass = malignant", fillcolor="#e99254"] ;
+1 -> 2 ;
+3 [label="samples = 2140\nvalue = [1800, 340]\nclass = malignant", fillcolor="#ea995e"] ;
+2 -> 3 ;
+4 [label="samples = 2144\nvalue = [1966, 178]\nclass = malignant", fillcolor="#e78c4b"] ;
+2 -> 4 ;
+5 [label="x[8] <= 0.5\nsamples = 1819\nvalue = [1748, 71]\nclass = malignant", fillcolor="#e68641"] ;
+1 -> 5 ;
+6 [label="samples = 684\nvalue = [647, 37]\nclass = malignant", fillcolor="#e68844"] ;
+5 -> 6 ;
+7 [label="samples = 1135\nvalue = [1101, 34]\nclass = malignant", fillcolor="#e6853f"] ;
+5 -> 7 ;
+8 [label="x[5] <= 0.5\nsamples = 197\nvalue = [68, 129]\nclass = benign", fillcolor="#a1d1f3"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="x[7] <= 0.5\nsamples = 143\nvalue = [44, 99]\nclass = benign", fillcolor="#91c9f1"] ;
+8 -> 9 ;
+10 [label="samples = 142\nvalue = [43, 99]\nclass = benign", fillcolor="#8fc8f0"] ;
+9 -> 10 ;
+11 [label="samples = 1\nvalue = [1, 0]\nclass = malignant", fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label="x[8] <= 0.5\nsamples = 54\nvalue = [24, 30]\nclass = benign", fillcolor="#d7ebfa"] ;
+8 -> 12 ;
+13 [label="samples = 41\nvalue = [15, 26]\nclass = benign", fillcolor="#abd6f4"] ;
+12 -> 13 ;
+14 [label="samples = 13\nvalue = [9, 4]\nclass = malignant", fillcolor="#f1b991"] ;
+12 -> 14 ;
+}
